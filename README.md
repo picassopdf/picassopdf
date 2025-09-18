@@ -56,7 +56,6 @@ pdf.convertBatch(urls).toPDFs('outputs/')
    .catch(err => console.error(err));
 
 **Python:**
-```bash
 # Install
 pip install picassopdf
 
@@ -72,7 +71,6 @@ urls = ["https://example.com/page1", "https://example.com/page2"]
 pdf.convert_batch(urls).to_pdfs("outputs/")
 
 **Java:**
-```bash
 import com.picassopdf.PicassoPDF;
 
 public class PdfExample {
@@ -94,7 +92,6 @@ public class PdfExample {
 }
 
 **C#:**
-```bash
 using PicassoPDF;
 
 class Program
@@ -118,7 +115,6 @@ class Program
 }
 
 **PHP:**
-```bash
 <?php
 require 'vendor/autoload.php';
 
