@@ -35,31 +35,58 @@
 **For batch conversions simply pass an array with urls strings inside**
 
 **Node.js:**
+```bash
+# Install
 npm install picassopdf
 
 const PicassoPDF = require('picassopdf');
 
 const pdf = new PicassoPDF();
-pdf.convert('https://example.com').toPDF('output.pdf')
-  .then(() => console.log('PDF generated!'))
-  .catch(err => console.error(err));
+
+// Single URL
+pdf.convert('https://example.com')
+   .toPDF('output.pdf')
+   .then(() => console.log('PDF generated!'))
+   .catch(err => console.error(err));
+
+// Batch URLs
+const urls = ['https://example.com/page1', 'https://example.com/page2'];
+pdf.convertBatch(urls).toPDFs('outputs/')
+   .then(() => console.log('Batch PDFs generated!'))
+   .catch(err => console.error(err));
 
 **Python:**
+```bash
+# Install
 pip install picassopdf
 
+from picassopdf import PicassoPDF
+
 pdf = PicassoPDF()
+
+# Single URL
 pdf.convert("https://example.com").to_pdf("output.pdf")
 
+# Batch URLs
+urls = ["https://example.com/page1", "https://example.com/page2"]
+pdf.convert_batch(urls).to_pdfs("outputs/")
+
 **Java:**
+```bash
 import com.picassopdf.PicassoPDF;
 
 public class PdfExample {
     public static void main(String[] args) {
         PicassoPDF pdf = new PicassoPDF();
         try {
-            pdf.convert("https://example.com")
-               .toPDF("output.pdf");
+            // Single URL
+            pdf.convert("https://example.com").toPDF("output.pdf");
             System.out.println("PDF generated!");
+
+            // Batch URLs
+            String[] urls = {"https://example.com/page1", "https://example.com/page2"};
+            pdf.convertBatch(urls).toPDFs("outputs/");
+            System.out.println("Batch PDFs generated!");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -67,6 +94,7 @@ public class PdfExample {
 }
 
 **C#:**
+```bash
 using PicassoPDF;
 
 class Program
@@ -74,28 +102,39 @@ class Program
     static void Main()
     {
         var pdf = new PicassoPDF.PicassoPDF();
-        try
-        {
+        try {
+            // Single URL
             pdf.Convert("https://example.com").ToPDF("output.pdf");
             Console.WriteLine("PDF generated!");
-        }
-        catch (Exception ex)
-        {
+
+            // Batch URLs
+            string[] urls = { "https://example.com/page1", "https://example.com/page2" };
+            pdf.ConvertBatch(urls).ToPDFs("outputs/");
+            Console.WriteLine("Batch PDFs generated!");
+        } catch (Exception ex) {
             Console.WriteLine(ex.Message);
         }
     }
 }
 
 **PHP:**
+```bash
 <?php
 require 'vendor/autoload.php';
 
 use PicassoPDF\PicassoPDF;
 
 $pdf = new PicassoPDF();
+
 try {
+    // Single URL
     $pdf->convert("https://example.com")->toPDF("output.pdf");
-    echo "PDF generated!";
+    echo "PDF generated!\n";
+
+    // Batch URLs
+    $urls = ["https://example.com/page1", "https://example.com/page2"];
+    $pdf->convertBatch($urls)->toPDFs("outputs/");
+    echo "Batch PDFs generated!\n";
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
