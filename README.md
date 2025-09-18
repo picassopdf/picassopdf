@@ -1,10 +1,10 @@
-# PicassoPDF — HTML to PDF Converter API
+# PicassoPDF — HTML to PDF API GitHub
 
 ![PicassoPDF](https://img.shields.io/badge/PicassoPDF-HTML--to--PDF%20API-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![npm](https://img.shields.io/npm/v/picassopdf)
 
-**HTML to PDF converter API for SaaS, fintech, and healthtech. Convert URLs or HTML to PDF, generate invoices, bank statements, medical reports, and automate document workflows with our REST API or SDK.**
+**HTML to PDF API GitHub — Convert URLs or HTML to PDF, generate invoices, bank statements, and automate document workflows for SaaS, fintech & healthtech.**
 
 ---
 
@@ -31,7 +31,7 @@
 
 ---
 
-## ⚡ Installation + Code Examples
+## ⚡ Installation + HTML to PDF Examples on GitHub
 **For batch conversions simply pass an array with urls strings inside**
 
 ```bash
