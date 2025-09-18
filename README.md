@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![npm](https://img.shields.io/npm/v/picassopdf)
 
-**Generate PDF masterpieces, instantly — contracts, reports, invoices, statements & more**
+**Generate PDF Masterpieces, Instantly — Contracts, Reports, Invoices, Statements & More**
 
 ---
 
