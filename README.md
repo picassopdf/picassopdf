@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![npm](https://img.shields.io/npm/v/picassopdf)
 
-**Free HTML to PDF API — Convert URLs or HTML to PDF, generate invoices, bank statements, and automate document workflows for SaaS, fintech & healthtech.**
+**Generate PDF masterpieces, instantly — contracts, reports, invoices, statements & more**
 
 ---
 
