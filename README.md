@@ -35,7 +35,7 @@
 **For batch conversions simply pass an array with urls strings inside**
 
 ```bash
-**Node.js:**
+**Node.js HTML to PDF:**
 # Install
 npm install picassopdf
 
@@ -57,7 +57,7 @@ pdf.convertBatch(urls).toPDFs('outputs/')
 ```
 
 ```bash
-**Python:**
+**Python HTML to PDF:**
 # Install
 pip install picassopdf
 
@@ -74,7 +74,7 @@ pdf.convert_batch(urls).to_pdfs("outputs/")
 ```
 
 ```bash
-**Java:**
+**Java HTML to PDF:**
 import com.picassopdf.PicassoPDF;
 
 public class PdfExample {
@@ -97,7 +97,7 @@ public class PdfExample {
 ```
 
 ```bash
-**C#:**
+**C# HTML to PDF:**
 using PicassoPDF;
 
 class Program
@@ -122,7 +122,7 @@ class Program
 ```
 
 ```bash
-**PHP:**
+**PHP HTML to PDF:**
 <?php
 require 'vendor/autoload.php';
 
@@ -171,6 +171,7 @@ try {
 - Supports HTML, CSS, JS rendering in PDFs
 - Perfect for SaaS, fintech, and healthtech applications
 - Lightweight, fast, secure, and reliable
+- Free plan available
 
 ---
 
