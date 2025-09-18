@@ -31,7 +31,7 @@
 
 ---
 
-## ⚡ Installation + HTML to PDF Examples on GitHub
+## ⚡ Installation + HTML to PDF GitHub Examples
 **For batch conversions simply pass an array with urls strings inside**
 
 ```bash
