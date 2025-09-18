@@ -34,8 +34,8 @@
 ## ⚡ Installation + Code Examples
 **For batch conversions simply pass an array with urls strings inside**
 
-**Node.js:**
 ```bash
+**Node.js:**
 # Install
 npm install picassopdf
 
@@ -55,6 +55,7 @@ pdf.convertBatch(urls).toPDFs('outputs/')
    .then(() => console.log('Batch PDFs generated!'))
    .catch(err => console.error(err));
 
+
 **Python:**
 # Install
 pip install picassopdf
@@ -69,6 +70,7 @@ pdf.convert("https://example.com").to_pdf("output.pdf")
 # Batch URLs
 urls = ["https://example.com/page1", "https://example.com/page2"]
 pdf.convert_batch(urls).to_pdfs("outputs/")
+
 
 **Java:**
 import com.picassopdf.PicassoPDF;
@@ -90,6 +92,7 @@ public class PdfExample {
         }
     }
 }
+
 
 **C#:**
 using PicassoPDF;
@@ -113,6 +116,7 @@ class Program
         }
     }
 }
+
 
 **PHP:**
 <?php
