@@ -54,8 +54,9 @@ const urls = ['https://example.com/page1', 'https://example.com/page2'];
 pdf.convertBatch(urls).toPDFs('outputs/')
    .then(() => console.log('Batch PDFs generated!'))
    .catch(err => console.error(err));
+```
 
-
+```bash
 **Python:**
 # Install
 pip install picassopdf
@@ -70,8 +71,9 @@ pdf.convert("https://example.com").to_pdf("output.pdf")
 # Batch URLs
 urls = ["https://example.com/page1", "https://example.com/page2"]
 pdf.convert_batch(urls).to_pdfs("outputs/")
+```
 
-
+```bash
 **Java:**
 import com.picassopdf.PicassoPDF;
 
@@ -92,8 +94,9 @@ public class PdfExample {
         }
     }
 }
+```
 
-
+```bash
 **C#:**
 using PicassoPDF;
 
@@ -116,8 +119,9 @@ class Program
         }
     }
 }
+```
 
-
+```bash
 **PHP:**
 <?php
 require 'vendor/autoload.php';
@@ -152,21 +156,21 @@ try {
 
 ## 🌐 Supported Platforms & Languages
 
-Node.js / JavaScript
-Python
-PHP
-Java
-C#
-REST API (platform-agnostic)
+- Node.js / JavaScript
+- Python
+- PHP
+- Java
+- C#
+- REST API (platform-agnostic)
 
 ---
 
 ## 💡 Why Choose PicassoPDF?
-Designed for developers needing high-quality, programmatic PDF generation
-Optimized for batch PDF processing
-Supports HTML, CSS, JS rendering in PDFs
-Perfect for SaaS, fintech, and healthtech applications
-Lightweight, fast, secure, and reliable
+- Designed for developers needing high-quality, programmatic PDF generation
+- Optimized for batch PDF processing
+- Supports HTML, CSS, JS rendering in PDFs
+- Perfect for SaaS, fintech, and healthtech applications
+- Lightweight, fast, secure, and reliable
 
 ---
 
